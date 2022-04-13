@@ -4,7 +4,7 @@ At its core, it is a REST-API service which enables tracking salary data, view r
 salaries for selected employees, get a list of employees on a payroll (all or for a certain period).
 
 ## Endpoints
-There are several endpoints avaibale based on different usecases.
+There are several endpoints available based on different uses.
 
 ### \> Signing up
 **POST**  `/api/auth/signup`: Sign up new users for the service. Request body:
@@ -86,7 +86,7 @@ or an entire list of data for the requesting user:
     ]
 
 ### \> Administration
-**GET**  `/api/admin/user`: Obtain all non-senstive data from registered users.
+**GET**  `/api/admin/user`: Obtain all non-sensitive data from registered users.
 
 **DELETE**  `/api/admin/user/{email}`: Delete a user by specifying their email address in the url
 
@@ -131,13 +131,13 @@ Based on their given role, user can access the above endpoints as follows:
 | PUT api/admin/user/access  | -  | -  | -  | +  | -  |
 | GET api/security/events  | -  | -  | -  | -  | +  |
 
-_Of course, you can change the accessabilty of certain endpoints based on your needs._
+_Of course, you can change the accessibility of certain endpoints based on your needs._
 
 ## Installation
 
 - `./gradlew build --refresh-dependencies` to install dependencies
 - The application is secured by https
-- However, I used a selfsigned certificate which shouldn't be used in a productive environment. Get a certificate
+- However, I used a self-signed certificate which shouldn't be used in a productive environment. Get a certificate
 from a trustworthy source like [Let's encrypt](https://letsencrypt.org/getting-started/).
 
 ## Technologies
